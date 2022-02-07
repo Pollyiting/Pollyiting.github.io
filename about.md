@@ -1,6 +1,6 @@
 ---
 layout: page
 title: "I am Polly"
-permalink: /about/
+permalink: /who-am-i
 ---
 ## test ##
