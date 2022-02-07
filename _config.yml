@@ -1,16 +1,17 @@
 # Site settings
-title: 笨方法学写作
+title: Pollyiting
 header-img: "img/Xacebook.jpg"
 tagline: "cn"  
-description: "笨方法学写作|这一次彻底学会写作"  
+description: "Pollyiting|Small Artist" 
+#description: "笨方法学写作|这一次彻底学会写作"  
 baseurl: ""
 #url: "http://www.cnfeat.com"  
 
 # About/contact
 owner: 
-  name: "陈素封"
-  email: CNFeat@gmail.com
-  bio: "笨方法学写作"
+  name: "Polly Yiting Li"
+  email: yitingli1214t@gmail.com
+#   bio: "笨方法学写作"
 
 # Data
 gavatar: img/favicon1.ico
