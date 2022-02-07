@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "I am Polly"
-permalink: /who-am-i
+layout: post
+title: I am polly
+permalink: /who-am-i.md
 ---
 ## test ##
