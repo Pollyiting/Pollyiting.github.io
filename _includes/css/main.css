@@ -89,12 +89,12 @@ hr.star-primary:after {
 }
 
 .btn-primary {
-    border-color: #fed;
+    border-color: #fed136;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed;
+    background-color: #fed136;
 }
 
 .btn-primary:hover,
@@ -102,7 +102,7 @@ hr.star-primary:after {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #fed;
+    border-color: #fed136;
     color: #fff;
     background-color: #fec503;
 }
@@ -128,25 +128,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed;
-    background-color: #fed;
+    border-color: #fed136;
+    background-color: #fed136;
 }
 
 .btn-primary .badge {
-    color: #fed;
+    color: #fed136;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #fed;
+    border-color: #fed136;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed;
+    background-color: #fed136;
 }
 
 .btn-xl:hover,
@@ -154,7 +154,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #fed;
+    border-color: #fed136;
     color: #fff;
     background-color: #fec503;
 }
@@ -180,12 +180,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed;
-    background-color: #fed;
+    border-color: #fed136;
+    background-color: #fed136;
 }
 
 .btn-xl .badge {
-    color: #fed;
+    color: #fed136;
     background-color: #fff;
 }
 
