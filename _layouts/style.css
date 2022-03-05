@@ -1,0 +1,4 @@
+{% include css/bootstrap.min.css %}
+{% include css/main.css %}
+{% include css/nav.css %}
+{% include css/canvas.css %}
