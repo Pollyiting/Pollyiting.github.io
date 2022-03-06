@@ -1,0 +1,36 @@
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div>
+            <!-- <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div> -->
+            <div>
+            {% for post in site.categories[page.term] %}
+                <div>
+                    <div class="caption">
+                        <div class="caption-content">
+                            <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                        </div>
+                    </div>
+                        
+
+                    <video style="width:600px;height:auto;" controls autoplay>
+                        {% for path in page.video_path%}
+                            <source src="movie.ogg" type="video/ogg">
+                        {% endfor %}
+
+                        {% if page.video_swf%}
+                        <object data="movie.mp4" width="320" height="240">
+                            <embed width="320" height="240" src="movie.swf">
+                        </object>
+                        {% endif %}
+                    </video>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
