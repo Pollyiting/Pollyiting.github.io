@@ -1,3 +1,23 @@
+nav ul li div ul li a{
+    font-size: 14px;
+}
+
+.btn{
+    background-color: gray;
+}
+.btn:hover{
+    background-color: #424346;
+}
+
+#contactForm{
+    max-width: 500px;
+    margin: 50px auto 0 auto;
+}
+
+.form-group{
+    font-size: 12px;
+}
+
 #headerWrapper {
     position: relative;
     z-index: 999;
@@ -43,7 +63,7 @@
 .left-sided{
     position:absolute;
     bottom: 20px;
-    right:16.7%;
+    right:10%;
     height: fit-content;
     /* right: 16.7%; */
 }
@@ -185,5 +205,6 @@ nav ul li:hover div{
 
 nav ul li div{
     background: white;
+    padding: 0px;
     width: 175px;
 }
