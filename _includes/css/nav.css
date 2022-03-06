@@ -63,9 +63,9 @@ nav ul li div ul li a{
 .left-sided{
     position:absolute;
     bottom: 20px;
-    right:10%;
+    /* right:-webkit-cal(8.5%+10px); */
     height: fit-content;
-    /* right: 16.7%; */
+    right: 10%;
 }
 
 .left-sided .item{
@@ -100,11 +100,25 @@ nav ul li div ul li a{
 }
 
 @media screen and (max-width: 770px){
-    #topNav{
+    #topNav, .topNav{
         display: None;
     }
     #mobileNav{
         display: block;
+    }
+
+    section{
+        margin: 0 5% 0 5%;
+    }
+
+    #portfolio .portfolio-item .portfolio-link {
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #portfolio .portfolio-item .portfolio-link {
+        max-width: none;
     }
 }
 

@@ -281,7 +281,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 125px 200px;
+    padding: 125px 8.5% 0 200px;
 }
 
 section h2 {
@@ -305,14 +305,14 @@ section.success {
 }
 
 #portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
+    /* right: 0; */
+    margin: 10px 10px 15px 10px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
     max-width: 400px;
 }
 
@@ -355,9 +355,20 @@ section.success {
     z-index: 2;
 }
 
+.portfolio-flex-row::after{
+    content: "";
+    flex: auto;
+}
+
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin: 10px 10px 30px 10px;
+    }
+
+    .portfolio-flex-row::after{
+        content: "";
+        flex: auto;
     }
 }
 
@@ -371,13 +382,13 @@ section.success {
     }
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
       flex: 1 0 49%;
-      max-width: 49%;
+      /* max-width: 49%; */
     }
   }
   @media (min-width: 960px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
       flex: 1 0 32%;
-      max-width: 32%;
+      /* max-width: 32%; */
     }
   }
   /* A large grid might need four columns on widescreen layouts */
