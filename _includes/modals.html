@@ -1,6 +1,7 @@
  <!-- Portfolio Modals -->
  {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    {% for i in (1..post.img_num) %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}{{i}}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -8,32 +9,23 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="portofolio">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if page.img_path %}
+                            <img src="/asset/img/{{page.img_path}}/{{i}}.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% else %}
+                            <img src="/asset/img/{{page.term}}/{{i}}.jpg" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% endif %}
+                            <h>{{ post.title }}</h>
                             {% if post.description %}
                                 <p>{{ post.description }}</p>
                             {% endif %}
                             <ul class="list-inline item-details">
-                                {% if post.client %}
-                                    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
                                 {% if post.project-date %}
                                     <li>Date:
                                         <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.category %}
-                                    <li>Service:
-                                        <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
                                         </strong>
                                     </li>
                                 {% endif %}
@@ -45,4 +37,5 @@
             </div>
         </div>
     </div>
+    {% endfor %}
 {% endfor %}

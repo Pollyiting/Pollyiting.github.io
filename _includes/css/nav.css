@@ -12,11 +12,16 @@
     align-items: center;
 }
 
+#headerWrapper.sidebar-position-top.sidebar-fixed {
+    padding: 0 0 0 65px;
+}
+
 #headerWrapper.sidebar-position-left {
     position: absolute;
-    top: 100px;
+    top: 125px;
     left: 25px;
     width: 175px;
+    height: 100%
 }
 #headerWrapper.sidebar-fixed {
     padding: 0; 
@@ -35,6 +40,18 @@
     visibility: hidden;
 }
 
+.left-sided{
+    position:absolute;
+    bottom: 20px;
+    right:16.7%;
+    height: fit-content;
+    /* right: 16.7%; */
+}
+
+.left-sided .item{
+    margin: 0 10px;
+}
+
 #logo {
     margin-bottom: -20px;
     margin-left: -12px;
@@ -47,7 +64,12 @@
     max-width: 300px;
 }
 
+/* @media screen and (max-width: 770px) {
+    
+} */
+
 .logo.image img {
+    margin-top: -30px;
     width: 300px;
     max-width: 300px;
 }
@@ -55,6 +77,15 @@
 
 #topNav {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 770px){
+    #topNav{
+        display: None;
+    }
+    #mobileNav{
+        display: block;
+    }
 }
 
 .main-nav {
@@ -99,6 +130,60 @@ li {
     text-decoration: none;
 }
 
+a.item{
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    font-family: "proxima-nova";
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0em;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding: .2em;
+    color: #424346;
+    text-decoration: none; 
+}
+
 div, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
     display: block;
+}
+
+nav ul li div{
+    /* position:fixed; */
+    background: transparent;
+    display:none;
+    /* z-index: 999; */
+    padding-top: 10px;
+    /* margin: -32px 0 0 175px; */
+}
+
+/* nav ul li ul li a{
+} */
+
+nav ul li a:hover{
+    border-radius: 10px;
+    background: rgba(95, 95, 95, 0.4);
+}
+
+nav ul li div ul li:hover{
+    border-radius: 10px;
+    background: rgba(95, 95, 95, 0.4);
+}
+
+nav ul li div ul li:hover {
+    border-radius: 10px;
+    background: rgba(95, 95, 95, 0.4);
+}
+
+nav ul li:hover div{
+    /* left: 100px; */
+    display: block;
+}
+
+nav ul li div{
+    background: white;
+    width: 175px;
 }
